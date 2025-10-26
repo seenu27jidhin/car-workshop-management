@@ -1,0 +1,186 @@
+.menubar-container {
+  background-color: rgb(8, 8, 8);
+  width: 100%;
+  /* position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+
+.menubar-top-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: rgb(181, 154, 37); */
+  flex-wrap: wrap;
+  padding: 0.5rem 1rem;
+}
+
+.menubar-top-note-div {
+  background-color: rgb(246, 205, 26);
+  clip-path: polygon(0 0, 100% 0, 95% 100%, 0 100%);
+  padding: 0.5rem 1rem;
+  flex: 1;
+  max-width: 350px;
+}
+
+.login-div {
+  display: flex;
+  align-items: center;
+  color: beige;
+  background-color: black;
+  padding: 0.5rem 1rem;
+  flex-shrink: 0;
+}
+
+.login-text {
+  display: flex;
+  gap: 10px;
+}
+.login-text a {
+  text-decoration: none;
+  color: rgb(247, 245, 242);
+}
+.login-text a:hover {
+  color: rgb(213, 174, 123);
+}
+
+.contact-div {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  background-color: rgb(248, 247, 245);
+  gap: 1rem;
+  padding: 1rem 5%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.contactno,
+.time,
+.e-mail,
+.location {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.call-text,
+.time-text,
+.email-text,
+.location-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+}
+
+.menubar-list-div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f8f8f7;
+  padding: 1rem 5%;
+  gap: 1rem;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.list-menus {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.list-menus a {
+  text-decoration: none;
+  color: black;
+}
+.list-menus .active {
+  color: rgb(246, 205, 26);
+}
+/* .nav-link.active:active {
+  background-color: rgb(200, 219, 31);
+  color: rgb(225, 199, 91);
+} */
+.list-menus a:hover {
+  color: rgb(246, 205, 26);
+}
+.cart-count {
+  color: bisque;
+  flex-wrap: wrap;
+  padding: 3px;
+  font-size: 15px;
+}
+.divider {
+  width: 1px;
+  background-color: #ccc;
+  height: 40px;
+}
+
+.list-socialmedia {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.list-appoinment {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  background-color: rgb(246, 205, 26);
+  padding: 0.5rem 1rem;
+}
+
+.list-appoinment button {
+  background-color: black;
+  color: white;
+  padding: 0.5rem;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .menubar-top-note-div {
+    clip-path: none;
+  }
+
+  .menubar-list-div {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .list-menus {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .divider {
+    display: none;
+  }
+
+  .list-socialmedia,
+  .list-appoinment {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .contact-div {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .login-div {
+    justify-content: center;
+    width: 100%;
+  }
+}
